@@ -29,4 +29,4 @@
 
 ### Job
 - belongs_to :chart
-- title, image_url, helper, chart_id
+- title, image_url, description, helper, chart_id
