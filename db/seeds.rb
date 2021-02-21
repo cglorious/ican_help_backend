@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Chart.delete_all
+Job.delete_all
+
 kinder = Chart.create(name: "Kindergarten")
 girl_scout = Chart.create(name: "Girl Scout")
 chore = Chart.create(name: "Chore")
