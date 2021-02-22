@@ -14,6 +14,11 @@ class Api::V1::ChartsController < ApplicationController
     end
   end
 
+  def show
+    chart = Chart.find_by(id: params[:id])
+    render json: ChartSerializer.new(chart)
+  end
+
   private
 
   def chart_params
